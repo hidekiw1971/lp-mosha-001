@@ -1,30 +1,12 @@
 @use "global" as *;
 .header {
-  @include mq(md) {
-  }
-}
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: rem(172.8);
 
-.header__inner {
-  position: relative;
-  @include mq(md) {
-  }
-}
-
-.header__inner::before {
-  content: "";
-  display: block;
-  padding-top: 268.8%;
-  @include mq(md) {
-  }
-}
-
-.header__inner img {
-  // width: rem(82.5);
-  width: 22vw;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   @include mq(md) {
   }
 }
